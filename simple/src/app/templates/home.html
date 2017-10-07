@@ -1,0 +1,36 @@
+<h1>this is home html</h1>
+ msg : {{homeCtrlAs.msg}} 
+ <br>
+ resolve:{{rHello}}
+ <hr>
+ <button ng-click="reverseName()"> reveseName</button> {{name}}
+<hr>
+
+<a ui-sref=".child1">child1</a>
+
+<div ui-view=""></div>
+<div ui-view="child2View"></div>
+
+<div my-directive name = "{{name}}" country="country"></div>
+<input type="text" ng-model="name"/>
+<hr>
+<div some-directive name= "name" ></div>
+
+<counter count="homeCtrlAs.count"></counter>{{homeCtrlAs.count}}
+
+
+<div style="border: 1px solid">
+    <tabs selected='2'>
+      <tab label="Tab 1">
+        Tab 1 contents!
+       </tab>
+       <tab label="Tab 2">
+        Tab 2 contents!
+       </tab>
+       <tab label="Tab 3">
+        Tab 3 contents!
+       </tab>
+    </tabs>
+  </div>
+
+  <parent-component></parent-component>

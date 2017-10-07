@@ -1,0 +1,13 @@
+this is red template
+
+<div  ng-controller="myCtrl">
+    <p>Name : <input type="text" ng-model="name" even-number></p>
+    <h1>item {{name.$valid}}</h1>
+    <h1>Hello {{name}}</h1>
+    {{firstName + " " + lastName}}
+    <div my-directive></div>
+</div>
+<form name="myForm">
+      <input name="myInput" ng-model="myInput"  even-number>
+    </form>
+<h1>{{myForm.myInput.$valid}}</h1>

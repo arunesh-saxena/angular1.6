@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+<script src="../node_modules/angular/angular.min.js"></script>
+<!--<script src="../node_modules/angular-ui-router\lib\index.js"></script>-->
+
+<script src="./vendors/angular-route.min.js"></script>
+<script src="./vendors/angular-ui-router.min.js"></script>
+
+<script src="../node_modules/jQuery/tmp/jquery.js"></script>
+
+
+
+<body ng-app="myApp">
+
+<a ui-sref="home">Home</a>
+<a href="#red">Red</a>
+
+    <div ng-view></div>
+    <div ui-view></div>
+
+
+  </script>
+
+  <script src="./app/app.js"></script>
+  <script src="./app/app.state.js"></script>
+  <!--Controller-->
+  <script src="./app/controllers/home.ctrl.js"></script>
+  <script src="./app/controllers/myCtrl.ctrl.js"></script>
+  <script src="./app/controllers/child1.ctrl.js"></script>
+
+  <!--Directives-->
+  <script src="./app/directives/myDirective.js"></script>
+  <script src="./app/directives/customValidators.js"></script>
+
+  <!--Components-->
+    <script src="./app/components/myComponents.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
